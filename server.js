@@ -31,12 +31,16 @@ app.use("/api/category", categoryRoutes)
 app.use('/api/product', productRoutes )
 
 
-const PORT = process.env.PORT || 8000;
+
 
 //rest api
 app.use("*", function (req,res){
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 })
-app.listen(PORT ,()=>{
-  console.log(`Server is Running on ${PORT}`.bgGreen.white)
-})
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+  console.log(
+    `Server Running on ${process.env.DEV_MODE} mode on port ${PORT}`.bgCyan
+      .white
+  );
+});
