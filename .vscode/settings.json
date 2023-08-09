@@ -1,0 +1,18 @@
+{
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:ScarletChioces}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    },
+    "cSpell.words": [
+        "braintree",
+        "contactus",
+        "Khussa's",
+        "loadmore",
+        "realted"
+    ],
+    "git.ignoreLimitWarning": true
+}
