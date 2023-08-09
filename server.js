@@ -8,7 +8,7 @@ const categoryRoutes = require('./routes/categoryRoutes')
 const productRoutes = require ('./routes/productRoutes')
 const cors = require('cors')
 const path = require('path')
-const fileURLToPath = require ("url")
+const { fileURLToPath } = require ("url")
 
 //env config
 
@@ -17,6 +17,7 @@ connectDb();
 
 //ES Module
 const__filename = fileURLToPath(import.meta.url); 
+const__dirname = path.dirname(__filename);
 const app = express();
 //Middleware
 app.use(cors())
