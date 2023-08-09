@@ -16,7 +16,7 @@ dotenv.config();
 connectDb();
 
 //ES Module
-const__filename = fileURLToPath(import.meta.url); 
+const__filename = fileURLToPath( meta.url); 
 const__dirname = path.dirname(__filename);
 const app = express();
 //Middleware
