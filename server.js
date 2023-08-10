@@ -8,7 +8,7 @@ const categoryRoutes = require('./routes/categoryRoutes')
 const productRoutes = require ('./routes/productRoutes')
 const cors = require('cors')
 const path = require('path')
-const { fileURLToPath } = require ('url)
+const { fileURLToPath } = require ('url')
 
 
 //env config
