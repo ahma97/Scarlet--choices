@@ -8,10 +8,11 @@ const categoryRoutes = require('./routes/categoryRoutes')
 const productRoutes = require ('./routes/productRoutes')
 const cors = require('cors')
 const path = require('path')
-const __dirname = dirname(fileURLToPath(import.meta.url));
+const { fileURLToPath } = require ('url)
+
 
 //env config
-
+const __dirname = dirname(fileURLToPath(import.meta.url));
 dotenv.config();
 connectDb();
 
